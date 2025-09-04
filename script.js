@@ -12,3 +12,10 @@ function calculateLoan() {
   const monthly = (amount * rate) / (1 - Math.pow(1 + rate, -payments));
   document.getElementById('result').innerText = `Monthly Payment: AED ${monthly.toFixed(2)}`;
 }
+
+function resetCalculator() {
+  document.getElementById('amount').value = '';
+  document.getElementById('rate').value = '';
+  document.getElementById('years').value = '';
+  document.getElementById('result').innerText = '';
+}
