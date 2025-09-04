@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Loan Calculator | H Tech Services</title>
+  <title>Loan Calculator | CoreiT Tech</title>
   <meta name="description" content="Free loan calculator to estimate monthly payments based on amount, interest rate, and duration.">
   <meta name="keywords" content="loan calculator, EMI, finance tool, monthly payment">
   <meta name="author" content="H Tech Services">
@@ -23,12 +23,17 @@
       <label>Loan Amount (AED): <input type="number" id="amount" placeholder="e.g. 50000"></label>
       <label>Interest Rate (%): <input type="number" id="rate" placeholder="e.g. 5"></label>
       <label>Years to Pay: <input type="number" id="years" placeholder="e.g. 3"></label>
-      <button onclick="calculateLoan()">Calculate</button>
+
+      <div class="button-group">
+        <button onclick="calculateLoan()">Calculate</button>
+        <button onclick="resetCalculator()" class="reset-btn">Reset</button>
+      </div>
+
       <h2 id="result"></h2>
     </main>
 
     <footer>
-      <p>© 2025 H Tech Services | <a href="mailto:contact@yourdomain.com">Contact Us</a></p>
+      <p>© 2025 CoreiT Tech | <a href="mailto:contact@coreittech.com">Contact Us</a></p>
     </footer>
   </div>
 
